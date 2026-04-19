@@ -31,6 +31,29 @@ cmake --build D:\Ming\2\pixel_escape_build --config Release
     └── main.cpp     # 游戏与窗口逻辑
 ```
 
+## 上传到 GitHub
+
+本仓库已在本地初始化并完成首次提交（分支名 **`main`**）。在 GitHub 网页新建 **空仓库**（不要勾选添加 README / .gitignore / license），然后在项目目录执行（将 URL 换成你的仓库地址）：
+
+```bash
+git remote add origin https://github.com/你的用户名/仓库名.git
+git push -u origin main
+```
+
+若使用 SSH：
+
+```bash
+git remote add origin git@github.com:你的用户名/仓库名.git
+git push -u origin main
+```
+
+首次在本机使用 Git 时建议配置用户名与邮箱：
+
+```bash
+git config --global user.name "你的名字"
+git config --global user.email "你的邮箱"
+```
+
 ## 许可证
 
 若用于课程作业，请遵循学校关于引用与开源的要求。
