@@ -1,0 +1,37 @@
+# CMake / 构建输出
+build/
+out/
+cmake-build-*/
+CMakeFiles/
+CMakeCache.txt
+cmake_install.cmake
+Makefile
+*.ninja
+.ninja_*
+
+# Visual Studio / MSVC
+.vs/
+*.vcxproj*
+*.sln
+*.user
+*.opendb
+*.VC.db
+x64/
+x86/
+Debug/
+Release/
+*.obj
+*.pdb
+*.ilk
+*.exe
+*.exp
+*.lib
+
+# 建议在 ASCII 路径单独建目录编译（如 D:/Ming/2/pixel_escape_build）
+pixel_escape_build/
+
+# 系统与编辑器
+.DS_Store
+Thumbs.db
+*.swp
+*~
