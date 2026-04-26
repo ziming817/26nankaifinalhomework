@@ -23,6 +23,27 @@ if(EXISTS "${_WIN_PNG}")
       "${_WIN_PNG}" "$<TARGET_FILE_DIR:pixel_escape>/assets/win_taunt.png"
     COMMENT "Copy win_taunt.png next to executable")
 endif()
+set(_BOSS_PNG "${CMAKE_SOURCE_DIR}/assets/boss_dark.png")
+if(EXISTS "${_BOSS_PNG}")
+  add_custom_command(TARGET pixel_escape POST_BUILD
+    COMMAND ${CMAKE_COMMAND} -E copy_if_different
+      "${_BOSS_PNG}" "$<TARGET_FILE_DIR:pixel_escape>/assets/boss_dark.png"
+    COMMENT "Copy boss_dark.png next to executable")
+endif()
+set(_PLAYER_PNG "${CMAKE_SOURCE_DIR}/assets/player_nailong.png")
+if(EXISTS "${_PLAYER_PNG}")
+  add_custom_command(TARGET pixel_escape POST_BUILD
+    COMMAND ${CMAKE_COMMAND} -E copy_if_different
+      "${_PLAYER_PNG}" "$<TARGET_FILE_DIR:pixel_escape>/assets/player_nailong.png"
+    COMMENT "Copy player_nailong.png next to executable")
+endif()
+set(_WIN_TRUE_PNG "${CMAKE_SOURCE_DIR}/assets/win_true_nailong.png")
+if(EXISTS "${_WIN_TRUE_PNG}")
+  add_custom_command(TARGET pixel_escape POST_BUILD
+    COMMAND ${CMAKE_COMMAND} -E copy_if_different
+      "${_WIN_TRUE_PNG}" "$<TARGET_FILE_DIR:pixel_escape>/assets/win_true_nailong.png"
+    COMMENT "Copy win_true_nailong.png next to executable")
+endif()
 
 if(MSVC)
   target_compile_options(pixel_escape PRIVATE /W4 /utf-8)
