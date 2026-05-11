@@ -30,6 +30,10 @@ Release/
 # 建议在 ASCII 路径单独建目录编译（如 D:/Ming/2/pixel_escape_build）
 pixel_escape_build/
 
+# Word 打开文档时的临时锁文件（勿提交）
+~$*.docx
+~$*.doc
+
 # 系统与编辑器
 .DS_Store
 Thumbs.db
